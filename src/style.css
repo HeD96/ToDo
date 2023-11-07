@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+#app-body {
+    height: 100%;
+
+    display: flex;
+}
+
+.menu-panel {
+    border: 2px solid red;
+    height: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile {
+    border: 2px solid green;
+    flex: 1;
+}
+
+.task-section {
+    border: 2px solid orange;
+    flex: 3;
+}
+
+.project-section {
+    border: 2px solid purple;
+    flex: 3;
+}
+
+.app-display {
+    border: 2px solid blue;
+    flex: 4;
+}

@@ -1,3 +1,5 @@
+import { NewTaskForm } from "./newTaskForm.js";
+
 export function AppBodyRender() {
     const bodyApp = document.querySelector("#app-body");
 
@@ -21,6 +23,8 @@ export function AppBodyRender() {
     taskSectionTitle.append(addTaskButton);
     addTaskButton.classList.add("add-task");
     addTaskButton.textContent = "+";
+
+    addTaskButton.addEventListener("click", NewTaskForm);
 
     const todayTasks = document.createElement("p");
     todayTasks.classList.add("today-tasks");
